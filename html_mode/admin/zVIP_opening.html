@@ -1,0 +1,199 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8"/>
+    <meta name="viewport" content="width=device-width,user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <title>casoh</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="css/css3edffect.css"/>
+    <link rel="stylesheet" href="css/main.css"/>
+</head>
+<body>
+
+<div class="main-ui-theme-manager theme-default">
+
+    <div id="header" class="b-border" >
+        <div class="window-margin-max p-tb-15px relative">
+            <div class="m-tool"><img src="images/logo1.png" /> | 庄家中心</div>
+            <div class="po-help-text"><a href="javascript:;" >我要玩</a></div>
+        </div>
+    </div>
+
+    <div class="content-frame window-margin-max">
+
+
+        <div class="inner-banner"></div>
+
+
+        <div class="frame-center">
+
+            <div class="nav-menu">
+                <h1>庄家中心</h1>
+
+                <h2>开盘</h2>
+                <ul>
+                    <li><a class="active" href="javascript:;" >申请开盘</a></li>
+                    <li><a href="javascript:;" >我的开盘</a></li>
+                </ul>
+
+                <h2>账号安全及权限管理</h2>
+                <ul>
+                    <li><a href="javascript:;" >密码修改</a></li>
+                    <li><a href="javascript:;" >账号安全</a></li>
+                    <li><a href="javascript:;" >子账号管理</a></li>
+                    <li><a href="javascript:;" >权限管理</a></li>
+                </ul>
+
+                <h2>财务管理</h2>
+                <ul>
+                    <li><a href="javascript:;" >查看流水</a></li>
+                    <li><a href="javascript:;" >提现</a></li>
+                    <li><a href="javascript:;" >充值</a></li>
+                </ul>
+
+                <h2>操盘手</h2>
+                <ul>
+                    <li><a href="javascript:;" >开盘</a></li>
+                    <li><a href="javascript:;" >操手</a></li>
+                </ul>
+
+                <h2>帮助中心</h2>
+                <ul>
+                    <li><a href="javascript:;" >自助开盘</a></li>
+                </ul>
+
+            </div>
+
+            <div class="layer-contuiter">
+
+                <div class="content">
+
+                    <div class="tool-title b-border p-tb-10px">申请开盘</div>
+
+
+                    <div class="tool-item-section">
+
+                        <br>
+                        <div class="str-form-s1 form-tool">
+                            <div class="fixBox">
+                                <label>请选择要开盘游戏：</label>
+                                <div class="input-tool">
+                                    <select>
+                                        <option>-请选择-</option>
+                                    </select>
+                                    <select>
+                                        <option>-请选择-</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="fixBox">
+                                <label>盘期：</label>
+                                <div class="input-tool">
+                                    <select>
+                                        <option>-请选择-</option>
+                                        <option>3个月</option>
+                                        <option>6个月</option>
+                                        <option>1年</option>
+                                        <option>2年</option>
+                                        <option>3年</option>
+                                        <option>6年</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="fixBox">
+                                <label>开盘申请金：</label>
+                                <div class="input-tool">
+                                    <b>1200.00</b> 元
+                                </div>
+                            </div>
+
+                            <div class="fixBox">
+                                <label>开盘申请金：</label>
+                                <div class="input-tool">
+                                    <input type="checkbox" /> 在账户余额上扣取（余额不足，请 <a href="javascript:;" >充值</a> ）
+                                </div>
+                            </div>
+
+
+                            <div class="fixBox">
+                                <label>&nbsp;</label>
+                                <div class="btn-group">
+                                    <a class="btn" href="javascript:;">同意并开盘</a>
+                                </div>
+                            </div>
+
+                            <div class="fixBox">
+                                <label>&nbsp;</label>
+                                <div class="input-tool">
+                                    <input type="checkbox" /> 已了解《XX协议书》，并同意。
+                                </div>
+                            </div>
+
+
+                        </div>
+
+                    </div>
+
+
+
+
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+
+
+
+
+
+    </div>
+
+
+
+    <!--<div id="footer" >121</div>-->
+
+</div>
+
+<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="js/css3Trans.js"></script>
+<!--<script type="text/javascript" src="js/bootstrap.min.js"></script>-->
+
+
+<script type="text/javascript" >
+
+
+
+    $(function(){
+
+
+        $('.tab-tool a').each(function(i){
+            $(this).click(function(){
+                if(!$(this).hasClass('active')){
+                    $(this).addClass('active').siblings().removeClass('active');
+                    $('.tab-box-tool .item-tab-content').eq(i).fadeIn().siblings().hide();
+                }else{
+                    return false;
+                }
+
+            });
+        });
+
+
+    });
+</script>
+
+
+
+
+</body>
+</html>

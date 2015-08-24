@@ -1,0 +1,249 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8"/>
+    <meta name="viewport" content="width=device-width,user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <title>casoh</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="css/css3edffect.css"/>
+    <link rel="stylesheet" href="css/main.css"/>
+</head>
+<body>
+
+<div class="main-ui-theme-manager theme-default">
+
+    <!--<div id="header" class="container">121</div>-->
+
+    <div id="main" class="mx-height">
+
+        <div class="mx-height row">
+            <div class="td">
+
+                <div class="conf-main-lay">
+
+                 <div class="s-logo">
+                     <div class="td">
+                         <img src="images/coliti.png" />
+                     </div>
+                 </div>
+
+                <div class="login-layer line-box-flow effect1" style="display: none">
+
+                    <div class="content-box round">
+
+                        <h3>会员登录</h3>
+
+                        <div class="row form-box">
+                            <div class="input-group">
+                                <span class="input-group-addon" data-toggle="tooltip" data-placement="top" title="用户名" ><span aria-hidden="true" class="glyphicon glyphicon-user"></span></span>
+                                <input class="form-control" type="text" />
+                                <span class="input-group-addon"><span aria-hidden="true" class="glyphicon glyphicon-pencil"></span></span>
+                            </div>
+                            <div class="input-group">
+                                <span class="input-group-addon"  data-toggle="tooltip" data-placement="top" title="密码"><span aria-hidden="true" class="glyphicon glyphicon-lock"></span></span>
+                                <input class="form-control"  type="password" />
+                                <span class="input-group-addon"><span aria-hidden="true" class="glyphicon glyphicon-ok"></span></span>
+                            </div>
+
+
+
+                            <br>
+                            <div class="row">
+                                <div class="col-xs-6">
+                                    <input id="check-remober"  type="checkbox" /> <label for="check-remober">记住帐号</label>
+                                </div>
+                                <div class="col-xs-6" style="text-align: right;"><a href="find_password.html">忘记密码?</a></div>
+
+                            </div>
+
+
+
+                            <div class="btn-group">
+                                <button id="actionform" class="col-xs-12 btn btn-default">提交</button>
+                            </div>
+
+                            <br>
+                            <div class="btn-group">
+                                <div class="col-xs-12" style="text-align: right;"><a id="reg-once" href="javascript:;">免费注册</a></div>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+                    <div class="loding-form" style="display:none;">
+                        <div class="loginLoading">
+                            <div class="loader"></div>
+                        </div>
+                        <a id="cancel-reload" href="javascript:;"><span aria-hidden="true" class="glyphicon glyphicon-repeat"></span> 处理中...</a>
+                    </div>
+
+
+
+
+                </div>
+
+                <div class="login-layer line-box-flow effect2" style="display: none">
+
+                    <div class="content-box round">
+
+                        <h3>快速注册</h3>
+
+                        <div class="row form-box">
+                            <div class="input-group">
+                                <span class="input-group-addon" data-toggle="tooltip" data-placement="top" title="用户名" ><span aria-hidden="true" class="glyphicon glyphicon-user"></span></span>
+                                <input class="form-control" type="text" />
+                                <span class="input-group-addon"><span aria-hidden="true" class="glyphicon glyphicon-pencil"></span></span>
+                            </div>
+                            <div class="input-group">
+                                <span class="input-group-addon"  data-toggle="tooltip" data-placement="top" title="密码"><span aria-hidden="true" class="glyphicon glyphicon-lock"></span></span>
+                                <input class="form-control"  type="password" />
+                                <span class="input-group-addon"><span aria-hidden="true" class="glyphicon glyphicon-ok"></span></span>
+                            </div>
+
+                            <div class="input-group">
+                                <span class="input-group-addon"  data-toggle="tooltip" data-placement="top" title="密码"><span aria-hidden="true" class="glyphicon glyphicon-lock"></span></span>
+                                <input class="form-control"  type="password" />
+                                <span class="input-group-addon"><span aria-hidden="true" class="glyphicon glyphicon-ok"></span></span>
+                            </div>
+
+
+                            <br>
+                            <div class="btn-group">
+                                <button id="actionform2" class="col-xs-12 btn btn-default">注册</button>
+                            </div>
+
+                            <br>
+                            <div class="btn-group">
+                                <div class="col-xs-12" style="text-align: right;">已经注册,马上<a id="tolayer-login" href="javascript:;">登录</a></div>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+                    <div class="loding-form" style="display:none;">
+                        <div class="loginLoading">
+                            <div class="loader"></div>
+                        </div>
+                        <a id="cancel-reload2" href="javascript:;"><span aria-hidden="true" class="glyphicon glyphicon-repeat"></span> 处理中...</a>
+                    </div>
+
+
+
+
+                </div>
+
+
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!--<div id="footer" class="container">121</div>-->
+
+</div>
+
+<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="js/css3Trans.js"></script>
+<!--<script type="text/javascript" src="js/bootstrap.min.js"></script>-->
+
+
+<script type="text/javascript" >
+
+
+    function hideLoading(){
+        $('.loding-form').hide();
+        $('.login-layer .content-box').css({display:'none', visibility: ''}).fadeIn(500);
+
+    }
+
+
+    $(function(){
+
+        $('#reg-once').click(function(){
+            $('.effect1').hide();
+            $('.effect2').CSS3Trans({
+                inClassName : 'tobox'
+            },function(){
+            });
+        });
+
+        $('#tolayer-login').click(function(){
+            $('.effect2').hide();
+            $('.effect1').CSS3Trans({
+                inClassName : 'tobox'
+            },function(){
+            });
+        });
+
+
+
+        var onLoding = false;
+        $('.effect1').CSS3Trans({
+            inClassName : 'tobox'
+        },function(){
+        });
+
+
+        $('#actionform').click(function(){
+            onLoding = true;
+            $('.loding-form').fadeIn(850);
+            $('.login-layer .content-box').CSS3Trans({
+                inClassName : 'round-change-min'
+            },function(){
+                if(onLoding){
+                    $('.login-layer .content-box').css({ visibility: 'hidden'});
+                }
+
+            });
+
+
+        });
+
+        $('#actionform2').click(function(){
+            onLoding = true;
+            $('.loding-form').fadeIn(850);
+            $('.login-layer .content-box').CSS3Trans({
+                inClassName : 'round-change-min'
+            },function(){
+                if(onLoding){
+                    $('.login-layer .content-box').css({ visibility: 'hidden'});
+                }
+
+            });
+
+
+        });
+
+
+
+
+        $('#cancel-reload').click(function(){
+           // alert(132);
+            onLoding = false;
+            hideLoading();
+        });
+        $('#cancel-reload2').click(function(){
+           // alert(132);
+            onLoding = false;
+            hideLoading();
+        });
+
+
+
+    });
+</script>
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,250 @@
+ul,ol,li,h1,h2,h3,h4,h5,h6{ margin: 0;padding: 0; list-style-type: none;}
+a, button, input {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-tap-highlight-color: transparent;
+    outline:0 none!important;
+}
+
+a:hover,a,a:focus,a:active{ text-decoration: none;}
+button,.btn{ border-radius: 0!important;}
+/* layer */
+
+.theme-default{
+    /*background: linear-gradient(45deg, rgba(4,58,91,.5), #0f4169) repeat scroll 0 0 rgba(0, 0, 0, 0);
+    background: -webkit-linear-gradient(45deg, rgba(4,58,91,.5), #0f4169);*/
+    background: #fff;
+    /*background: #196CAF;*/
+
+}
+.theme-default .btn-group .btn,.theme-default .btn,.theme-default .btn-group .btn:active,.theme-default .btn:active,.theme-default .btn-group .btn:focus,.theme-default .btn:focus{
+    background: none;
+    box-shadow: none;
+    text-shadow: none;
+    color: #333;
+    font-size: 12px;
+}
+
+.c-blue{ color: #196CAF;}
+.c-green{ color: #390;}
+.c-red{ color: #f00;}
+
+.theme-default .login-layer h3{ color: #333;}
+.glyphicon-remove{ color: #c00;}
+.glyphicon-ok{ color: #390;}
+.glyphicon-pencil{ color: #196CAF;}
+
+html,body{ width: 100%; display: table;height: 100%;}
+.main-ui-theme-manager{ width: 100%; display: table;height: 100%; min-height: 100%; overflow-x: hidden;}
+
+.window-margin-max{
+    width: 960px; display: table; margin: 0 auto;
+}
+
+#header{
+    width: 100%:
+}
+.b-border{
+    border-bottom: 1px solid #dedede;
+}
+.p-lr-15px{
+    padding:0 15px;
+}
+
+.p-tb-15px{
+    padding: 15px 0;
+}
+
+.p-tb-10px{
+    padding: 10px 0;
+}
+.p-all-10px{
+    padding: 10px;
+}
+
+.p-tb-5px{
+    padding: 5px 0;
+}
+.relative{ position: relative;}
+
+.theme-default .btn.btn-default,.theme-default .btn.btn-default:focus,.theme-default .btn.btn-default:active{
+    background: #112346; color: #fff; border-radius: 4px; border: 1px solid #000;
+}
+
+.tab-tool,.tab-tool a,.tab-tool ul li a{ color: #999; display: inline-block; outline: 0 none;}
+.tab-tool a:focus,.tab-tool ul li a:active,.tab-tool a.active{ color: #00aeef;outline: 0 none; text-decoration: none;}
+
+.form-tool label{ margin: 0; padding: 0; float: left; font-weight: normal;text-align: right; line-height: 34px; padding-right: 10px;}
+.form-tool .btn-group{ margin-top: 12px;}
+
+.input-tool .form-control{ display:inline-block;}
+.form-tool .input-addon{display:inline-block; cursor: pointer;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    color: #555;
+    font-size: 14px;
+    height: 34px;
+    line-height: 1.42857;
+    padding: 6px 12px;
+    text-align: center;
+}
+
+.frame-width1{
+    width: 780px; margin: 0 auto;
+}
+.frame-width1 label{ width: 30%; }
+.frame-width1 .input-tool .form-control{ width: 220px;}
+.frame-width1 .btn-group{ padding-left: 30%;}
+.frame-width1 .input-addon{ width:98px;}
+.frame-width1 .btn.btn-default{ width: 120px;}
+.item-input-group{ width: 100%; margin-top: 12px;}
+
+
+.margin-t-15px{
+    margin-top: 15px;
+}
+.margin-t-10px{
+    margin-top: 10px;
+}
+
+.table-cell{ display: table-cell; vertical-align: middle;}
+.table{ display: table;}
+.frame-tipbox{ display: table; width: 560px; margin: 35px auto 0; height: 200px;}
+.frame-tipbox .tip-icon{ width: 20%; text-align: right; padding-right: 10px;}
+.frame-tipbox .tip-text{ padding-left: 25px;}
+
+
+.po-help-text{
+    position: absolute;;
+     right: 0;
+    bottom: 5px;
+}
+
+.inner-banner{ width: 100%; overflow: hidden; height: 120px; background: #ddd; margin-top: 10px;}
+
+
+.frame-center{ width: 100%; overflow: hidden; margin-top: 10px; padding-bottom: 10px;}
+
+.frame-center .nav-menu{ float: left; width: 220px; border: 1px solid #dedede; margin-right: 10px;}
+.frame-center .nav-menu h1{ font-size: 14px; font-weight: normal; color: #196CAF; text-indent: 15px; padding:12px 0;}
+.frame-center .nav-menu h2{ font-size: 12px; font-weight: normal;text-indent: 15px; padding:8px 0;
+    border: 1px solid #dedede; border-left: 0;border-right: 0;
+    background: #eee;
+}
+.frame-center .nav-menu ul,.frame-center .nav-menu ul li{ width: 100%;}
+.frame-center .nav-menu ul{padding-bottom: 5px;}
+.frame-center .nav-menu ul li a{ display: inline-block; width: 100%; height: 24px; line-height: 24px;text-indent: 15px;
+    font-size: 12px;
+    margin-top: 5px;  color: #666;}
+.frame-center .nav-menu ul li a.active,.frame-center .nav-menu ul li a:hover{
+    background:#196CAF ; color: #fff;
+}
+
+.frame-center .layer-contuiter{ padding-left: 230px; font-size: 12px;}
+.frame-center .layer-contuiter .content{ width: 100%;}
+.tool-title{ margin-bottom: 10px;}
+.tool-item-section,.user-tool{ width: 100%;}
+.tool-item-section{ padding: 10px 0 15px; display: table;}
+.user-tool{ overflow: hidden; padding-left: 30px;}
+.user-tool .userpic{ float: left; width:100px; height: 100px; border-radius: 50%; background: #dedede; margin-right: 8px;}
+.user-tool .userpic img{width:100px; height: 100px; border-radius: 50px; }
+.user-tool .tk-text{ padding-top: 15px;}
+.tool-item-section .price-tool{ padding-left: 35px; padding-top: 15px;}
+.tool-item-section .price-tool b{ color: #f60; font-size: 22px;}
+
+.block-img-list{ width:100%; display: table;}
+.block-img-list ul li{ float: left; display: inline-block; height: 90px; overflow: hidden; margin-top: 5px;}
+.row-item-4.block-img-list ul li{ width: 25%; padding: 2px;}
+.row-item-4.block-img-list ul li .img{ width: 100%; height: 88px; border: 1px solid #dedede; overflow: hidden;}
+.row-item-4.block-img-list ul li img{ width: 100%;}
+
+
+
+.str-form-s1{ width: 100%; margin: 0 auto; display: table;}
+.str-form-s1 .fixBox{ width: 100%; clear: both;display: table; margin-top: 15px;}
+.str-form-s1 .fixBox label{ width: 220px; text-align: right; padding-right: 10px; line-height: 18px;}
+.str-form-s1 .fixBox .input-tool{ float: left; width: 500px;}
+.str-form-s1 select{ width: 120px;}
+.str-form-s1 .input-tool b{ color: #c00; font-size: 16px;}
+.str-form-s1 .btn-group .btn,.str-form-s1 .btn-group .btn:focus,.str-form-s1 .btn-group .btn:active{
+    width: 120px; text-align: center;
+    background: #7b0000; color: #fff; }
+
+
+
+.table-s,.table-s table{ width: 100%; display: table;}
+.table-s table{ border-left: 1px solid #dedede; border-top: 1px solid #dedede;}
+.table-s tr th{ background: #f3f3f3;}
+.table-s tr th,.table-s tr td{ border-bottom: 1px solid #dedede; border-right: 1px solid #dedede; text-align: center; padding:9px 0;}
+.table-s thead th{ text-align: center; font-weight: normal;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.conf-main-lay{ width: 960px; display: table; margin: 0 auto;}
+.conf-main-lay .s-logo{ display: table-cell; height: 100%; width:70%; vertical-align: middle; color: #fff;}
+.conf-main-lay .s-logo b{font-size: 128px; color: #fff;text-shadow: 6px 6px 0 rgba(0,0,0,.5);}
+.mx-height{height: 100%; width: 100%; display: table; overflow: hidden;}
+.login-layer{ width:300px; position: relative; display: table-cell;}
+.tabCheck{ padding:4% 8% 0;}
+.tabCheck span{ display:block; padding:8px 0;}
+.form-box{ padding:6% 8% 10%;}
+.input-group{ margin-top: 8px;}
+.content-box{ width: 100%; position: relative; z-index:2 ;
+border-radius: 4px; border: 1px solid #ddd; border-radius: 0;}
+.form-box .btn-group{ margin-top: 4%; width: 100%;}
+.form-box .btn-group .btn{  padding: 9px 0;}
+
+.login-layer h3{ border-radius: 4px 4px 0 0; border-bottom: 2px solid #30BFF4;
+    padding: 12px 0; text-indent: 20px; margin:0 0;
+    font-size: 14px; font-weight: bold;
+}
+
+.login-layer .login-animte{ position: absolute; top:-70px;
+    left: 0px; height: 50px; width: 100%; overflow: hidden;/* border-radius: 75px;*/
+     z-index:1;
+    text-align: center;
+    color: #fff; font-size: 32px; font-weight: bold;
+
+}
+/*
+.login-layer .login-animte img{ border-radius: 75px;}*/
+
+.theme-list{ text-align: center; position: absolute; bottom: -30px;}
+.theme-list a{ display: inline-block; width:24px; height: 24px; border: 1px solid #fff;border-radius: 12px;}
+.theme-list a:hover{  border: 3px solid #fff;}
+.oringer{ background: #f60; }
+.red{ background: #c00; }
+.black{ background: #333; }
+
+.content-box .tabCheck .btn{ background: none;border:0; border-bottom: 1px solid #ddd;}
+.content-box .tabCheck .btn.atice{ background: none;border:0;
+    color:#30BFF4 ;
+    border-bottom: 1px solid #30BFF4;
+}
+.login-layer input.form-control{ transition:none; }
+
+.loding-form{ position: absolute; left:70px; top:140px; overflow: hidden; z-index: 9;}
+.loding-form a{display: block;left: 10px; top: 85px;
+    width:130px; font-style: normal; z-index: 10; color: #30BFF4;  text-align: center; padding-top: 5%; }
+.loding-form a:hover{ color: #30BFF4;}
+.content-box label{ font-weight: normal;}
+
+.theme-default .reg-form-content{ width: 980px; margin: 0 auto; border: 0; background: #fff;}
+.theme-default .reg-form-content h3{
+    border-bottom: 2px solid #30BFF4;
+    padding-bottom: 8px;
+}
+.theme-default .reg-form-content .form-box{
+    width: 480px; margin: 0 auto;
+}

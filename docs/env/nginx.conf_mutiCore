@@ -1,0 +1,66 @@
+# 多核配置, 线上环境使用
+# For more information on configuration, see:
+#   * Official English Documentation: http://nginx.org/en/docs/
+#   * Official Russian Documentation: http://nginx.org/ru/docs/
+
+user              nginx;
+
+# worker_processes     2;
+# worker_cpu_affinity 0101 1010;
+worker_processes     4;
+worker_cpu_affinity 0001 0010 0100 1000;
+
+error_log  /var/log/nginx/error.log;
+#error_log  /var/log/nginx/error.log  notice;
+#error_log  /var/log/nginx/error.log  info;
+
+pid        /var/run/nginx.pid;
+worker_rlimit_nofile 10240;
+
+events {
+    use epoll;
+    worker_connections  10240;
+}
+
+
+http {
+    include       /etc/nginx/mime.types;
+    default_type  application/octet-stream;
+
+    log_format  main  '$remote_addr - $remote_user [$time_local] "$request" '
+                      '$status $body_bytes_sent "$http_referer" '
+                      '"$http_user_agent" "$http_x_forwarded_for"';
+
+    access_log  /var/log/nginx/access.log  main;
+
+    sendfile        on;
+    #tcp_nopush     on;
+
+    #keepalive_timeout  0;
+    keepalive_timeout  65;
+
+    # default 1m , php.ini upload_max_fileseze default 2m
+    client_max_body_size 2m;
+
+    server_names_hash_bucket_size 128;
+
+    # 502 probolem solving
+    fastcgi_connect_timeout 60;
+    fastcgi_send_timeout 180;
+    fastcgi_read_timeout 180;
+    fastcgi_buffer_size 128k;
+    fastcgi_buffers 8 256k;
+    fastcgi_busy_buffers_size 256k;
+    fastcgi_temp_file_write_size 256k;
+    fastcgi_intercept_errors off;
+
+    gzip  on;
+
+    set_real_ip_from   10.80.1.0/24;
+    real_ip_header     X-Forwarded-For;
+
+    # Load config files from the /etc/nginx/conf.d directory
+    # The default server is in conf.d/default.conf
+    include /etc/nginx/conf.d/*.conf;
+
+}

@@ -1,0 +1,367 @@
+
+/* todo jquery mobile CSS3 */
+
+.flow {
+    -webkit-transform-origin: 50% 30%;
+    -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, .4);
+    -moz-transform-origin: 50% 30%;
+    -moz-box-shadow: 0 0 20px rgba(0, 0, 0, .4);
+    transform-origin: 50% 30%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, .4)
+}
+
+.flow.out {
+    -webkit-transform: translateY(-100%) scale(.7);
+    -webkit-animation-name: flowouttoleft;
+    -webkit-animation-timing-function: ease;
+    -webkit-animation-duration: 2s;
+    -moz-transform: translateY(-100%) scale(.7);
+    -moz-animation-name: flowouttoleft;
+    -moz-animation-timing-function: ease;
+    -moz-animation-duration: 2s;
+    transform: translateY(-100%) scale(.7);
+    animation-name: flowouttoleft;
+    animation-timing-function: ease;
+    animation-duration: 2s
+}
+
+.flow.po1{
+    -webkit-transform: translateY(0) scale(1);
+    -webkit-animation-name: flowinfromright;
+    -webkit-animation-timing-function: ease;
+    -webkit-animation-duration: 2s;
+    -moz-transform: translateY(0) scale(1);
+    -moz-animation-name: flowinfromright;
+    -moz-animation-timing-function: ease;
+    -moz-animation-duration: 2s;
+    transform: translateY(0) scale(1);
+    animation-name: flowinfromright;
+    animation-timing-function: ease;
+    animation-duration: 2s;
+}
+
+.flow.po2{
+    -webkit-transform: translateY(-100%) scale(.7);
+    -webkit-animation-name: flowouttoleft;
+    -webkit-animation-timing-function: ease;
+    -webkit-animation-duration: 2s;
+    -moz-transform: translateY(-100%) scale(.7);
+    -moz-animation-name: flowouttoleft;
+    -moz-animation-timing-function: ease;
+    -moz-animation-duration: 2s;
+    transform: translateY(-100%) scale(.7);
+    animation-name: flowouttoleft;
+    animation-timing-function: ease;
+    animation-duration: 2s
+}
+
+.flow.in {
+    -webkit-transform: translateY(0) scale(1);
+    -webkit-animation-name: flowinfromright;
+    -webkit-animation-timing-function: ease;
+    -webkit-animation-duration: 2s;
+    -moz-transform: translateY(0) scale(1);
+    -moz-animation-name: flowinfromright;
+    -moz-animation-timing-function: ease;
+    -moz-animation-duration:2s;
+    transform: translateY(0) scale(1);
+    animation-name: flowinfromright;
+    animation-timing-function: ease;
+    animation-duration: 2s;
+
+}
+
+@-webkit-keyframes flowouttoleft {
+    0% {
+        -webkit-transform: translateY(0) scale(1)
+    }
+    60%, 70% {
+        -webkit-transform: translateY(0) scale(.7)
+    }
+    100% {
+        -webkit-transform: translateY(-100%) scale(.7)
+    }
+}
+
+@-moz-keyframes flowouttoleft {
+    0% {
+        -moz-transform: translateY(0) scale(1)
+    }
+    60%, 70% {
+        -moz-transform: translateY(0) scale(.7)
+    }
+    100% {
+        -moz-transform: translateY(-100%) scale(.7)
+    }
+}
+
+@keyframes flowouttoleft {
+    0% {
+        transform: translateY(0) scale(1)
+    }
+    60%, 70% {
+        transform: translateY(0) scale(.7)
+    }
+    100% {
+        transform: translateY(-100%) scale(.7)
+    }
+}
+
+
+@-webkit-keyframes flowinfromleft {
+    0% {
+        -webkit-transform: translateX(-100%) scale(.7)
+    }
+    30%, 40% {
+        -webkit-transform: translateX(0) scale(.7)
+    }
+    100% {
+        -webkit-transform: translateX(0) scale(1)
+    }
+}
+
+@-moz-keyframes flowinfromleft {
+    0% {
+        -moz-transform: translateX(-100%) scale(.7)
+    }
+    30%, 40% {
+        -moz-transform: translateX(0) scale(.7)
+    }
+    100% {
+        -moz-transform: translateX(0) scale(1)
+    }
+}
+
+@keyframes flowinfromleft {
+    0% {
+        transform: translateX(-100%) scale(.7)
+    }
+    30%, 40% {
+        transform: translateX(0) scale(.7)
+    }
+    100% {
+        transform: translateX(0) scale(1)
+    }
+}
+
+@-webkit-keyframes flowinfromright {
+    0% {
+        -webkit-transform: translateY(100%) scale(.7)
+    }
+    30%, 40% {
+        -webkit-transform: translateY(0) scale(.7)
+    }
+    100% {
+        -webkit-transform: translateY(0) scale(1)
+    }
+}
+
+@-moz-keyframes flowinfromright {
+    0% {
+        -moz-transform: translateY(100%) scale(.7)
+    }
+    30%, 40% {
+        -moz-transform: translateY(0) scale(.7)
+    }
+    100% {
+        -moz-transform: translateY(0) scale(1)
+    }
+}
+
+@keyframes flowinfromright {
+    0% {
+        transform: translateY(100%) scale(.7)
+    }
+    30%, 40% {
+        transform: translateY(0) scale(.7)
+    }
+    100% {
+        transform: translateY(0) scale(1)
+    }
+}
+
+/* todo jquery mobile CSS3 end */
+.round{
+    -webkit-transform-origin: 50% 50%;
+    /*-webkit-box-shadow: 0 0 30px rgba(0, 0, 0, .4);*/
+    -moz-transform-origin: 50% 50%;
+    /*-moz-box-shadow: 0 0 20px rgba(0, 0, 0, .4);*/
+    transform-origin: 50% 50%;
+    /*box-shadow: 0 0 30px rgba(0, 0, 0, .4)*/
+}
+.round-change-min{
+    -webkit-transform: scale(1);
+    -webkit-animation-name: round-change-min;
+    -webkit-animation-timing-function: ease-in-out;
+    -webkit-animation-duration: 1s;
+
+    transform: scale(1);
+    animation-name: round-change-min;
+    animation-timing-function: ease-in-out;
+    animation-duration: 1s;
+}
+
+
+.line-box-flow{
+    -webkit-transform-origin: 50% 50%;
+    -moz-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+}
+
+.toline{
+    -webkit-transform: scaleY(.05);
+    -webkit-animation-name: toline;
+    -webkit-animation-timing-function: ease;
+    -webkit-animation-duration: 350ms;
+
+    transform: scaleY(.05);
+    animation-name: toline;
+    animation-timing-function: ease;
+    animation-duration: 350ms;
+}
+.line-box-flow.tobox{
+    -webkit-transform: scale(1);
+    -webkit-animation-name: tobox;
+    -webkit-animation-timing-function: ease-in-out;
+    -webkit-animation-duration: 650ms;
+
+    opacity: 1;
+    transform: scale(1);
+    animation-name: tobox;
+    animation-timing-function: ease-in-out;
+    animation-duration:650ms;
+}
+
+.loginLoading .loader {
+    margin: 0 auto;
+    font-size: 10px;
+    position: relative;
+    text-indent: -9999em;
+    border-top: 1.1em solid rgba(255, 255, 255, 0.2);
+    border-right: 1.1em solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1.1em solid rgba(255, 255, 255, 0.2);
+    border-left: 1.1em solid rgba(48, 191, 244, 0.70);
+    -webkit-animation: loader 1.1s infinite linear;
+    animation: loader 1.1s infinite linear;
+}
+.loginLoading .loader,
+.loginLoading .loader:after {
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+}
+@-webkit-keyframes loader {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+@keyframes loader {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes round-change-min {
+    0% {
+        transform:scale(1);opacity: 1;
+    }
+    100% {
+        transform:scale(.02);opacity:0;
+    }
+}
+@-webkit-keyframes round-change-min {
+    0% {
+        -webkit-transform:scale(1);opacity: 1;
+    }
+    100% {
+        -webkit-transform:scale(.02);opacity:0;
+    }
+}
+
+
+@keyframes toline {
+    0% {
+        transform:scaleY(1)
+    }
+    100% {
+        transform:scaleY(.05)
+    }
+}
+@-webkit-keyframes toline {
+    0% {
+        -webkit-transform:scaleY(1)
+    }
+    100% {
+        -webkit-transform:scaleY(.05)
+    }
+}
+
+@keyframes tobox {
+
+    0% {
+        transform:scale(1.3);opacity: 0;
+    }
+    100% {
+        transform:scale(1);opacity: 1;
+    }
+}
+
+@-webkit-keyframes tobox {
+    0% {
+        -webkit-transform:scale(1.3);opacity: 0;
+    }
+    100% {
+        -webkit-transform:scale(1);opacity: 1;
+    }
+}
+
+.x-move{
+    -webkit-transform-origin: 50% 50%;
+
+    -moz-transform-origin: 50% 50%;
+
+    transform-origin: 50% 50%;
+
+}
+
+.x-move.go{
+    -webkit-transform: translateY(50%);
+    -webkit-animation-name: movey;
+    -webkit-animation-timing-function: ease-in-out;
+    -webkit-animation-duration: 650ms;
+
+    opacity: 1;
+    animation-name: movey;
+    animation-timing-function: ease-in-out;
+    animation-duration:650ms;
+}
+
+
+@keyframes movey {
+
+    0% {
+        top: 0;opacity: 0;
+    }
+    100% {
+        top: -70px;opacity: 1;
+    }
+}
+
+@-webkit-keyframes movey {
+    0% {
+        top: 0;opacity: 0;
+    }
+    100% {
+        top: -70px;opacity: 1;
+    }
+}
